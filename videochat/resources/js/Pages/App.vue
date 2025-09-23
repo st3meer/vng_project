@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import router from '../router';
+import bottomnav from '../components/BottomNav.vue';
 </script>
 
 
@@ -9,7 +10,8 @@ import router from '../router';
       <v-app-bar title="drozva online communications"></v-app-bar>
       <v-main>
         <v-container>
-          <router-view></router-view>
+          <router-view/>
+          <bottomnav/>
         </v-container>
       </v-main>
     </v-app>
