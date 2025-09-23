@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import router from '../router';
-
 </script>
 
 
@@ -11,7 +10,7 @@ import router from '../router';
 
       <v-navigation-drawer>
         <v-list>
-          <v-list-item title="Navigation drawer"></v-list-item>
+          <v-list-item title="Navigation bar "></v-list-item>
         </v-list>
       </v-navigation-drawer>
 
