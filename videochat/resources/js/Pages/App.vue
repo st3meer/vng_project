@@ -6,14 +6,7 @@ import router from '../router';
 <template>
   <v-responsive class="border rounded" max-height="300">
     <v-app>
-      <v-app-bar title="App bar"></v-app-bar>
-
-      <v-navigation-drawer>
-        <v-list>
-          <v-list-item title="Navigation bar "></v-list-item>
-        </v-list>
-      </v-navigation-drawer>
-
+      <v-app-bar title="drozva online communications"></v-app-bar>
       <v-main>
         <v-container>
           <router-view></router-view>
