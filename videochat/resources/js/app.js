@@ -15,7 +15,10 @@ import { aliases, fa } from 'vuetify/iconsets/fa'
 // Root component
 import App from './Pages/App.vue'
 
-// Create Vuetify instance with FA as default icon set
+// Detect system theme
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+
+// Create Vuetify instance with FA + system theme
 const vuetify = createVuetify({
   components,
   directives,
@@ -24,9 +27,12 @@ const vuetify = createVuetify({
     aliases,
     sets: { fa },
   },
+  theme: {
+    defaultTheme: prefersDark ? 'dark' : 'light',
+  },
 })
 
-createApp(App)
-  .use(router)
-  .use(vuetify)
-  .mount('#app')
+const app = createApp(App)
+  app.use(router)
+  app.use(vuetify)
+  app.mount('#app')
